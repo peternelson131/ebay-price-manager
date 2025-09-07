@@ -6,11 +6,238 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXFileReference section */
+		747FCBD92E6D4471000D21BD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		747FCBDA2E6D4471000D21BD /* CLAUDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CLAUDE.md; sourceTree = "<group>"; };
+		747FCBDE2E6D4471000D21BD /* .env.example */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env.example; sourceTree = "<group>"; };
+		747FCBDF2E6D4471000D21BD /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		
+		/* Frontend Files */
+		747FCB012E6D4471000D21BD /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
+		747FCB022E6D4471000D21BD /* next.config.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = next.config.js; sourceTree = "<group>"; };
+		747FCB032E6D4471000D21BD /* tailwind.config.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = tailwind.config.js; sourceTree = "<group>"; };
+		747FCB042E6D4471000D21BD /* tsconfig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tsconfig.json; sourceTree = "<group>"; };
+		747FCB052E6D4471000D21BD /* layout.tsx */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.typescript; path = layout.tsx; sourceTree = "<group>"; };
+		747FCB062E6D4471000D21BD /* page.tsx */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.typescript; path = page.tsx; sourceTree = "<group>"; };
+		747FCB072E6D4471000D21BD /* globals.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = globals.css; sourceTree = "<group>"; };
+		
+		/* Backend Files */
+		747FCB082E6D4471000D21BD /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
+		747FCB092E6D4471000D21BD /* server.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = server.js; sourceTree = "<group>"; };
+		747FCB0A2E6D4471000D21BD /* auth.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = auth.js; sourceTree = "<group>"; };
+		747FCB0B2E6D4471000D21BD /* ebay.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = ebay.js; sourceTree = "<group>"; };
+		747FCB0C2E6D4471000D21BD /* listings.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = listings.js; sourceTree = "<group>"; };
+		747FCB0D2E6D4471000D21BD /* rules.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = rules.js; sourceTree = "<group>"; };
+		747FCB0E2E6D4471000D21BD /* dashboard.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = dashboard.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		747FCBD72E6D4471000D21BD = {
 			isa = PBXGroup;
 			children = (
+				747FCBD92E6D4471000D21BD /* README.md */,
+				747FCBDA2E6D4471000D21BD /* CLAUDE.md */,
+				747FCBDE2E6D4471000D21BD /* .env.example */,
+				747FCBDF2E6D4471000D21BD /* .gitignore */,
+				747FCB102E6D4471000D21BD /* frontend */,
+				747FCB112E6D4471000D21BD /* backend */,
+				747FCB122E6D4471000D21BD /* docs */,
 			);
+			sourceTree = "<group>";
+		};
+		747FCB102E6D4471000D21BD /* frontend */ = {
+			isa = PBXGroup;
+			children = (
+				747FCB012E6D4471000D21BD /* package.json */,
+				747FCB022E6D4471000D21BD /* next.config.js */,
+				747FCB032E6D4471000D21BD /* tailwind.config.js */,
+				747FCB042E6D4471000D21BD /* tsconfig.json */,
+				747FCB132E6D4471000D21BD /* src */,
+				747FCB142E6D4471000D21BD /* public */,
+			);
+			path = frontend;
+			sourceTree = "<group>";
+		};
+		747FCB132E6D4471000D21BD /* src */ = {
+			isa = PBXGroup;
+			children = (
+				747FCB152E6D4471000D21BD /* app */,
+				747FCB162E6D4471000D21BD /* components */,
+				747FCB172E6D4471000D21BD /* pages */,
+				747FCB182E6D4471000D21BD /* services */,
+				747FCB192E6D4471000D21BD /* hooks */,
+				747FCB1A2E6D4471000D21BD /* store */,
+				747FCB1B2E6D4471000D21BD /* utils */,
+				747FCB1C2E6D4471000D21BD /* constants */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		747FCB152E6D4471000D21BD /* app */ = {
+			isa = PBXGroup;
+			children = (
+				747FCB052E6D4471000D21BD /* layout.tsx */,
+				747FCB062E6D4471000D21BD /* page.tsx */,
+				747FCB072E6D4471000D21BD /* globals.css */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		747FCB162E6D4471000D21BD /* components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		747FCB172E6D4471000D21BD /* pages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = pages;
+			sourceTree = "<group>";
+		};
+		747FCB182E6D4471000D21BD /* services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		747FCB192E6D4471000D21BD /* hooks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = hooks;
+			sourceTree = "<group>";
+		};
+		747FCB1A2E6D4471000D21BD /* store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = store;
+			sourceTree = "<group>";
+		};
+		747FCB1B2E6D4471000D21BD /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		747FCB1C2E6D4471000D21BD /* constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = constants;
+			sourceTree = "<group>";
+		};
+		747FCB142E6D4471000D21BD /* public */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = public;
+			sourceTree = "<group>";
+		};
+		747FCB112E6D4471000D21BD /* backend */ = {
+			isa = PBXGroup;
+			children = (
+				747FCB082E6D4471000D21BD /* package.json */,
+				747FCB1D2E6D4471000D21BD /* src */,
+				747FCB1E2E6D4471000D21BD /* tests */,
+			);
+			path = backend;
+			sourceTree = "<group>";
+		};
+		747FCB1D2E6D4471000D21BD /* src */ = {
+			isa = PBXGroup;
+			children = (
+				747FCB092E6D4471000D21BD /* server.js */,
+				747FCB1F2E6D4471000D21BD /* routes */,
+				747FCB202E6D4471000D21BD /* services */,
+				747FCB212E6D4471000D21BD /* models */,
+				747FCB222E6D4471000D21BD /* middleware */,
+				747FCB232E6D4471000D21BD /* config */,
+				747FCB242E6D4471000D21BD /* database */,
+				747FCB252E6D4471000D21BD /* jobs */,
+				747FCB262E6D4471000D21BD /* utils */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		747FCB1F2E6D4471000D21BD /* routes */ = {
+			isa = PBXGroup;
+			children = (
+				747FCB0A2E6D4471000D21BD /* auth.js */,
+				747FCB0B2E6D4471000D21BD /* ebay.js */,
+				747FCB0C2E6D4471000D21BD /* listings.js */,
+				747FCB0D2E6D4471000D21BD /* rules.js */,
+				747FCB0E2E6D4471000D21BD /* dashboard.js */,
+			);
+			path = routes;
+			sourceTree = "<group>";
+		};
+		747FCB202E6D4471000D21BD /* services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		747FCB212E6D4471000D21BD /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		747FCB222E6D4471000D21BD /* middleware */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = middleware;
+			sourceTree = "<group>";
+		};
+		747FCB232E6D4471000D21BD /* config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		747FCB242E6D4471000D21BD /* database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = database;
+			sourceTree = "<group>";
+		};
+		747FCB252E6D4471000D21BD /* jobs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = jobs;
+			sourceTree = "<group>";
+		};
+		747FCB262E6D4471000D21BD /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		747FCB1E2E6D4471000D21BD /* tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		747FCB122E6D4471000D21BD /* docs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
