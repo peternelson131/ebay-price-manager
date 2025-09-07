@@ -9,19 +9,20 @@ const nextConfig = {
   },
   env: {
     BACKEND_URL: process.env.NODE_ENV === 'production' 
-      ? 'https://your-site-name.netlify.app'
+      ? process.env.URL || 'https://your-site-name.netlify.app'
       : 'http://localhost:3001',
   },
-  async rewrites() {
-    return [
-      {
-        source: '/api/:path*',
-        destination: process.env.NODE_ENV === 'production'
-          ? '/.netlify/functions/api/:path*'
-          : `http://localhost:3001/api/:path*`,
-      },
-    ];
-  },
+  // Remove rewrites for static export
+  ...(process.env.NODE_ENV !== 'production' && {
+    async rewrites() {
+      return [
+        {
+          source: '/api/:path*',
+          destination: `http://localhost:3001/api/:path*`,
+        },
+      ];
+    },
+  }),
 };
 
 module.exports = nextConfig;
