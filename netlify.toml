@@ -1,7 +1,8 @@
 [build]
-  command = "cd frontend && npm install --production=false --legacy-peer-deps && npm run build"
-  functions = "netlify/functions"
-  publish = "frontend/out"
+  base = "frontend"
+  command = "npm install && npm run build"
+  functions = "../netlify/functions"
+  publish = "out"
 
 [build.environment]
   NODE_VERSION = "18.17.0"
@@ -18,7 +19,3 @@
 
 [functions]
   directory = "netlify/functions"
-
-[dev]
-  publish = "frontend/out"
-  command = "cd frontend && npm run dev"
