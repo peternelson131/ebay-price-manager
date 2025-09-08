@@ -1,5 +1,5 @@
 [build]
-  command = "cd frontend && npm install --legacy-peer-deps && npm run build"
+  command = "cd frontend && npm install --production=false --legacy-peer-deps && npm run build"
   functions = "netlify/functions"
   publish = "frontend/out"
 
@@ -18,3 +18,7 @@
 
 [functions]
   directory = "netlify/functions"
+
+[dev]
+  publish = "frontend/out"
+  command = "cd frontend && npm run dev"
